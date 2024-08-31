@@ -1,0 +1,49 @@
+.background {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    scroll-margin-top: 20rem;
+}
+
+.background .background_left {
+    flex: 1;
+    max-width: 64rem;
+}
+
+.background .background_left a{
+    color: var(--link-color);
+}
+
+.background .background_right {
+    max-width: 40rem;
+    flex: 1;
+}
+
+.background .background_right .tools-content {
+    background-color: var(--light-tertiary-color);
+    scroll-margin-top: 15rem;
+}
+
+.background .background_right .tools-content p {
+    margin: 1rem 0 2rem;
+}
+
+.background .background_right .tools-content ul {
+    padding: 0; /* Remove o preenchimento padrão da lista */
+    list-style: none; /* Remove os marcadores da lista */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Espaço entre os itens */
+}
+
+.background .background_right .tools-content ul li {
+    flex: 1 1 30%; /* Permite que os itens se ajustem e que cada um ocupe cerca de 30% do contêiner */
+    box-sizing: border-box; /* Garante que o padding e bordas não afete o tamanho do item */
+    text-align: center; /* Centraliza o texto dentro de cada item */
+}
+
+.background .background_right .tools-content ul li img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}

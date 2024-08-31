@@ -1,0 +1,42 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar .navbar_content {
+    padding: 3rem 4rem 1rem; /* Ajuste o padding inferior se necessário */
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 20; /* Garantia que o conteúdo está acima da linha divisória */
+}
+
+.navbar .navbar_divider {
+    height: 2px; /* Altura da linha divisória */
+    background-color: var(--gray); /* Cor da linha divisória */
+    width: 80%; /* Largura da linha divisória */
+    margin: 0 auto; /* Centraliza a linha divisória horizontalmente */
+    position: relative; /* Mantém a linha no fluxo do layout */
+    top: -3.5rem; /* Ajusta a linha divisória para cima */
+    bottom: 2rem;
+    z-index: 10; /* Garante que a linha divisória não seja sobreposta */
+}
+
+.navbar .navbar_content .navbar_links li {
+    display: inline-block;
+}
+
+.navbar .navbar_content .navbar_links li:not(:last-of-type) {
+    margin-right: 2rem;
+}
+
+.navbar .navbar_content .navbar_links a {
+    padding: 1rem;
+    display: inline-block;
+}
